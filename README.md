@@ -25,6 +25,8 @@ the check out date is "1970-01-01"
 8. Attempt a booking writing "1" in every field (and deposit true). Was able to do the booking, both dates are "1970-01-01"
 9. Attempt to delete a booking. Allowed. Works fine.
 10. Attempt an html/JavaScript injection: I actually did this on Friday, fields are not being validate properly.
+11. Attempt to write a large number in the price field, was allowed and looks terrible.
+12. Attempt to create two identical bookings. It is allowed, this should be alerted.
 
 Part 2: Selenium test:
 Used Cucumber/Selenium WebDriver. Tested the happy path of the two distinguished features: Make a booking, and delete a booking.
